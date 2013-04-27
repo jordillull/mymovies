@@ -9,6 +9,10 @@ body {
   
 }
 
+.room {
+  width: 600px;
+}
+
 /* Custom container */
 .container {
   margin: 0 auto;

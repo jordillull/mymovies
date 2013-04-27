@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> 
+        <script src="js/vendor/bootstrap.min.js"></script> 
+        <script src="js/main.js"></script>
     </head>
     <body> 
       <div class="container">
@@ -39,76 +43,11 @@
           </div><!-- /.navbar -->
         </div>
         
-        <div class="cinema">
-          <h2>Festival Park</h2>
-          <div class="movie">
-            <h3>Iron Man <a href="#"><span class="label label-warning">IMDb 7.8</span></a></h3>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Sala</th>
-                  <th>Sesiones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Sala 1</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 2</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 3</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 4</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-              </tbody>
-            </table> 
-          </div>
-          <h3>Iron Man <a href="#"><span class="label label-warning">IMDb 7.8</span></a></h3>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Sala</th>
-                  <th>Sesiones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Sala 1</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 2</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 3</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-                <tr>
-                  <td>Sala 4</td>
-                  <td>12:30 14:30 15:30</td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
-  
-        <div class="footer">
-          <p>&copy; Filmelón 2013</p>
-        </div>
-  
+        <script type="text/javascript">
+          var l = new Listing(cinesa);
+          l.get_html();
+        </script> 
+        
       </div> <!-- /container -->
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  
-          <script src="js/vendor/bootstrap.min.js"></script>
-  
-          <script src="js/main.js"></script>
     </body>
 </html>
